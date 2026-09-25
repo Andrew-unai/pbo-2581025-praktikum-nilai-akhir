@@ -25,5 +25,16 @@ int dibulatkan = (int) Math.round(akhir);
 double selisih = dibulatkan-akhir;
 boolean lulus = akhir >= 60;
 
+        System.out.println();
+        System.out.println("==== NILAI AKHIR ====");
+        System.out.println("Praktikum : " + praktikum);
+        System.out.println("Tugas : " + tugas);
+        System.out.println("MID : " + mid);
+        System.out.println("final : " + nfinal);
+        System.out.println("Nilai akhir : " + akhir);
+        System.out.println("Dipotong (int) : " + potong);
+        System.out.println("Dibulatkan (round) : " + dibulatkan);
+        System.out.println("Selisih : " + selisih);
+        System.out.println("Lulus >= 60 : " + lulus);
     }
 }
