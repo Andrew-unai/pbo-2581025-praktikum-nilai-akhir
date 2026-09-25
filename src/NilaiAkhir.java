@@ -17,5 +17,13 @@ double mid = input.nextDouble();
 
 System.out.print("Nilai Final : ");
 double nfinal = input.nextDouble();
+
+double akhir = praktikum*BOBOT_PRAKTIKUM + tugas*BOBOT_TUGAS + mid*BOBOT_MID + nfinal*BOBOT_FINAL;
+
+int potong = (int) akhir;
+int dibulatkan = (int) Math.round(akhir);
+double selisih = dibulatkan-akhir;
+boolean lulus = akhir >= 60;
+
     }
 }
