@@ -3,23 +3,21 @@ import java.util.Scanner;
 public class NilaiAkhir {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        final double BOBOT_PRAKTIKUM = 0.30 , BOBOT_TUGAS =  0.20 , BOBOT_MID = 0.20 ,
-                BOBOT_FINAL = 0.30;
 
 System.out.print("Nilai Praktikum : ");
-double praktikum = input.nextDouble();
+int praktikum = input.nextInt();
 
 System.out.print("Nilai Tugas : ");
-double tugas = input.nextDouble();
+int tugas = input.nextInt();
 
 System.out.print("Nilai MID : ");
-double mid = input.nextDouble();
+int mid = input.nextInt();
 
 System.out.print("Nilai Final : ");
-double nfinal = input.nextDouble();
+int nfinal = input.nextInt();
 
-double akhir = praktikum*BOBOT_PRAKTIKUM + tugas*BOBOT_TUGAS + mid*BOBOT_MID + nfinal*BOBOT_FINAL;
-// Kurung tak diperlukan karena * memiliki precedence lebih tinggi daripada +
+int akhir = praktikum * 30 / 100 + tugas * 20 / 100 + mid * 20 / 100 + nfinal * 30 / 100;
+// Hasilnya 78, bukan 79.1 — karena semua variabel bertipe int, setiap pembagian (/) langsung dibulatkan ke bawah sebelum dijumlahkan
 
 int potong = (int) akhir;
 int dibulatkan = (int) Math.round(akhir);
